@@ -1,5 +1,9 @@
 # Place any necessary imports here
 import sqlite3
+import parsers  
+
+#Lucas Bouchard
+#Collaborators()
 
 ####################################################
 # Part 0
@@ -10,25 +14,41 @@ import sqlite3
 # following code to have access to all of your parsing
 # functions. You can access these functions using the 
 # parsers.<function name> notation as in: 
-# parsers.countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Bush_1989.txt')
-import parsers.py
+#parsers.countWordsUnstructured('./state-of-the-union-corpus-1989-2017/Bush_1989.txt')
 
 ####################################################
 # Part 1
 ####################################################
-
 def populateDatabase(databaseName, wordCounts, metaData):
+    parsers.database_gen(databaseName)
+    conn = sqlite3.connect(databaseName)
+    c = conn.cursor()
+    for file in wordCounts:
+        for word in file:
+            c.execute(''' INSERT INTO SOTUWordCount_DT(filename, Word, Count) values ({0},{1},{2})'''
+            c.execute( '''INSERT INTO US_Presidents_DT(Index, number, start_date, end_date, president, prior, party, Vice_President) values({0},{1},{2},{3},{4},{5},{6},{7},{8})'''
+    c.execute('''SELECT word FROM SOTUWordCount_DT''')    
+    #print(c.fetchall())
+    conn.commit() 
+    conn.close()
+    return 0
+
+
+populateDatabase("Presidents_SOTU.db", wordCounts)
+ 
+
+    
+    
     # Write a function that will populate your database
     # with the contents of the word counts and us_presidents.csv
-    # to your database. 
+    # to your database.
+    
     # Inputs: A string containing the filepath to your database,
     #         A word count dictionary containing wordcounts for 
     #         each file in a directory,
     #         A metadata file containing a dictionary of data
     #         extracted from a supplemental file
     # Outputs: None
-    return 0
-
 # Test your code here
 
 ####################################################

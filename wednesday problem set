@@ -1,0 +1,26 @@
+Lucas Bouchard
+
+10/17/18
+
+Problem Set #7
+
+1.  What does A equal in the expression X LaTeX: \in ∈  A?
+
+A, in this case, equals 
+
+9 different random variables 
+
+2.  What does B equal in the expression LaTeX: B\:=\:\forall\:Y,\:\sum\:y_i B = ∀ Y , ∑ y i ?
+
+
+for all the random variables of Y, what is the sum of all the exsisting data outputs . 
+
+what i equals for data point y
+
+3. The kind of data distribution you have determines the kinds of analyses you can conduct on a variable. Plot the distribution of Y for X = "Percentage of adults aged 18 years and older who have obesity." What distribution does this data follow?
+
+4. Plot the same distribution Y as a function of T with T on the x-axis and Y on the y-axis. What distribution does this data follow? What does this distribution tell us about obesity rates in the US?
+
+
+data value = percetnage of respondence
+random variable= year data was collected/ questions
