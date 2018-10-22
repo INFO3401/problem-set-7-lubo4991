@@ -65,7 +65,7 @@ Surv_prob
 data$test_Column <-0
 
 
-9. We want to test whether the old naval cliche of "women and children first" impacted survival. Assume that a child is anyone under the age of 18. Use the titanic dataset to answer this question by computing the average number of survivors for men and women and for children and adults. As a hint, you will need to create a new column using Age to define a child (1 for a child, 0 for not a child).
+#9. We want to test whether the old naval cliche of "women and children first" impacted survival. Assume that a child is anyone under the age of 18. Use the titanic dataset to answer this question by computing the average number of survivors for men and women and for children and adults. As a hint, you will need to create a new column using Age to define a child (1 for a child, 0 for not a child).
 
 
 
