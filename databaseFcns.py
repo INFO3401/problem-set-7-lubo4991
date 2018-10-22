@@ -1,6 +1,10 @@
 # Place any necessary imports here
 import sqlite3
 import parsers  
+import pandas as pd
+import numpy as np
+import seaborn as sns
+% matplotlib inline
 
 #Lucas Bouchard
 #Collaborators()
@@ -34,7 +38,7 @@ def populateDatabase(databaseName, wordCounts, metaData):
     return 0
 
 
-populateDatabase("Presidents_SOTU.db", wordCounts)
+populateDatabase("Presidents_SOTU.db", wordCounts, metadata)
  
 
     
@@ -71,3 +75,11 @@ def computeLengthByParty(databaseName):
     # Outputs: The average speech length for presidents of each 
     #          of the two major political parties.
     return 0
+                      
+
+                      
+Wednesdays Problem Set  
+                      
+                      
+
+
