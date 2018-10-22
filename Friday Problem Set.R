@@ -61,14 +61,9 @@ data$test_Column <-0
 
 9. We want to test whether the old naval cliche of "women and children first" impacted survival. Assume that a child is anyone under the age of 18. Use the titanic dataset to answer this question by computing the average number of survivors for men and women and for children and adults. As a hint, you will need to create a new column using Age to define a child (1 for a child, 0 for not a child).
 
-#age = 6
-#children = 14
-#1 for child 0 for not a child
-names(data)
 
 
-
-# I wasn't able to figure out how to remove Nulls as these are counted as a child
+# I wasn't able to figure out how to remove Nulls as I believe these are counted as a children
 
 data$Children <-0
 data$Children[data$Age < 18] <- 1
