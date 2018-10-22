@@ -36,7 +36,7 @@ def populateDatabase(databaseName, wordCounts, metaData):
     return 0
 
 
-populateDatabase("Presidents_SOTU.db", wordCounts, metadata)
+populateDatabase("Presidents_SOTU.db", parsers.countWordsMany("./state-of-the-union-corpus-1989-2017"), "us_presidents.csv")
  
 
     
