@@ -43,6 +43,12 @@ Surv_Sx_Table_Prop
 
 Compute the proportion of men and women who survived. Then, compute the probability that if someone was a women, they would survive the crash and the probability that if someone was a man, they would survive the crash. 
 
+
+#I'm not sure if this is what you are looking for or the code I have here below Surv_Sx_Table_Prop
+Surv_Sx_Table_Prop
+
+
+#Not sure if this is actually doing what I want it to do
 #This is showing probability of gender based on survival. 
 gender_prob <- prop.table(table(data[,c(2,5)]), 1)
 
