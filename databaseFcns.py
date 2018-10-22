@@ -31,8 +31,6 @@ def populateDatabase(databaseName, wordCounts, metaData):
         for word in file:
             c.execute(''' INSERT INTO SOTUWordCount_DT(filename, Word, Count) values ({0},{1},{2})'''
             c.execute( '''INSERT INTO US_Presidents_DT(Index, number, start_date, end_date, president, prior, party, Vice_President) values({0},{1},{2},{3},{4},{5},{6},{7},{8})'''
-    c.execute('''SELECT word FROM SOTUWordCount_DT''')    
-    #print(c.fetchall())
     conn.commit() 
     conn.close()
     return 0
